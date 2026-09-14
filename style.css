@@ -1,0 +1,11 @@
+body{
+    margin: 0 24px 0 24px;
+}
+h1{
+    color: #c19cd9;
+    background-color: rgb(40, 15, 56);
+    padding: 16px;
+}
+#para{
+    color: blueviolet;
+}
