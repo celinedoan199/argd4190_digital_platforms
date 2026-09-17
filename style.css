@@ -1,5 +1,5 @@
 body{
-    margin: 0 24px 0 24px;
+    margin: 0 24px 24px 24px;
 }
 h1{
     color: #c19cd9;
@@ -8,4 +8,10 @@ h1{
 }
 #para{
     color: blueviolet;
+}
+footer{
+    color: #c19cd9;
+    background-color: rgb(40, 15, 56);
+    padding: 16px;
+    margin-top: 24px;
 }

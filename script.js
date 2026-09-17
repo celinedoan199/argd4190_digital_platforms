@@ -85,7 +85,69 @@ console.log(nums[nums.length - 1]) // this should output 5 //
 console.log(horsieNames[1]) // Titleholder //
 console.log(horsies[0].age) // Rulership's age //
 console.log(isLoaded)
-console.log(name)
+console.log(Name)
 console.log(lastName)
 console.log(Horse2.name)
 console.log(Horse)
+
+// Day 2 //
+const value = document.querySelector("#value");
+const input = document.querySelector("#pi_input");
+value.textContent = input.value;
+input.addEventListener("input", (Event) => {
+  value.textContent = Event.target.value;
+})
+
+// face thing //
+// text input //
+let word = document.getElementById("word")
+let wordInput = document.getElementById("word-input")
+// change face color //
+let face = document.getElementById("face")
+let faceColor = document.querySelector("#face-color")
+let faceColorOutp = document.querySelector("output[for-face-color]")
+// "for" attribute (above) //
+// left eye //
+let leftEye = document.getElementById("leftEye")
+let leftEyeX = document.getElementById("left-eye-x")
+let leftEyeY = document.getElementById("left-eye-y")
+
+// text //
+function updText(element, value) {
+  element.textContent = value
+}
+// i guess you do camel Case instead of the dash? //
+wordInput.addEventListener("input", function(){
+  updText(word, wordInput.value)
+})
+
+// left eye stuff //
+function updPos(element, positionX, positionY) {
+  //element.style.transform = "translate()" + posX + "px" + "," + posY + "px") <- annoying way//
+ // Template Literals (below) //
+  element.style.transform = `translate(${positionX.value}px, ${positionY.value}px)`
+}
+// upd left eye pos //
+leftEyeX.addEventListener("input", function(){
+  updPos(leftEye, leftEyeX.value, leftEyeY.value)
+})
+leftEyeY.addEventListener("input", function(){
+  updPos(leftEye, leftEyeX.value, leftEyeY.value)
+})
+
+// face color //
+function updColor(element, value) {
+  element.style.background = value
+}
+faceColor.addEventListener("input", function(){
+  updColor(face, faceColor.value)
+})
+function outputValue(element, value) {
+  element.textContent = value
+}
+// update face color //
+faceColor.addEventListener("input", function(){
+  updateColor(face, faceColor.value)
+  outputValue(faceColorOutp), faceColor.value
+})
+outputValue(faceColorOutp), faceColor.value

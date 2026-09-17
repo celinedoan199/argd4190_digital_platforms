@@ -16,7 +16,7 @@
     <p>Variables</p>
     <ul>
     <li>let
-    <li>const
+    <li>const (cannot be updated/changed by later code)
     <li>every new variable should have a unqiue name
     <li>inspect -> console to see errors
     <li>boolean = only true or false (ie. "is loaded?")
@@ -51,7 +51,66 @@
     </ul>
 
     <p>JavaScript can pull realtime data (ie. a weather app, the time, your device's battery, which browser you're using)</p>
+    <hr>    
+    <p>What is a function?</p>
+    <ul>
+        <li>In math, function = rule that generates takes an input & generates an output
+        <li>Programming = A reuseable piece of code used to perform a task (ie. like a variable)
+        <li>variable = used to save a value
+        <li>function = save a repetitive action
+        </li>
+    </ul>
+
+        <p>Creating our own functions</p>
+    <ul>
+        <li>Why do we need to make functions/variables(?)? Reduce repetitive code & make it more readable; update/change value in one place instead of everywhere it goes; make data/values reuseable
+        <li>Optimize code
+        <li>A good function should be easily reuseable
+        <li>There isn't a right or strict way to write functions
+        </li>
+    </ul>
+    <img src="assests/Screenshot 2026-09-16 at 8.53.18 AM.png" alt="" width="500">
+    <br><img src="assests/Screenshot 2026-09-16 at 8.59.39 AM.png" alt="" width="250">
+    <br>(above) You need to both define and use/call the function for it to do things
+
+    <h2>Function Exercises</h2>
+    <img src="assests/Screenshot 2026-09-16 at 9.20.29 AM.png" alt="" width="500">
+    <img src="assests/Screenshot 2026-09-16 at 9.30.54 AM.png" alt="" width="500">
+    <p>2 different ways of writing it:</p>
+    <img src="assests/Screenshot 2026-09-16 at 9.43.28 AM.png" alt="" width="500">
+    <img src="assests/Screenshot 2026-09-16 at 9.47.34 AM.png" alt="" width="500">
+
+    <p>Inputs</p>
+    <ul>
+        <li>user can control the values
+        <li>many types of user inputs
+        <br><img src="assests/Screenshot 2026-09-16 at 10.12.51 AM.png" alt="" height="500p">
+        <li>most input elements should have a value attribute available (ie. myElement.value)
+        <li>no closing tag for inputs, just a ">"
+        </li>
+    </ul>
+    <p>Range selector:</p>
+    <input id="pi_input" type="range" min="0" max="3.14" step="any">
+    <p>Value: <output id="value"></output></p>
+
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+   
+    <p>addEventListener</p>
+    <ul>
+        <li>execute a function upon user input
+        </li>
+    </ul>
+
+    <h2>Input demo</h2>
+    <p>1. creating a text input box</p>
+    <img src="assests/Screenshot 2026-09-16 at 10.39.40 AM.png" alt="" width="500">
 
     <script src="script.js"></script>
+
+
+    <footer>
+        <button><a href="index.html">home</a></button>
+    </footer>
 </body>
 </html>
