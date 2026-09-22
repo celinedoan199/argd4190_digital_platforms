@@ -15,3 +15,38 @@ footer{
     padding: 16px;
     margin-top: 24px;
 }
+img{
+    max-width: 100%;
+}
+/* project 2-2 */
+#golshi{
+    width: 500px;
+}
+#imgContainer {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 50px;
+    max-width: 500px;
+}
+#imgContainer img {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+#bgCircle::before {
+  content: "";
+  position: absolute;
+  
+  top: -20px;
+  left: -40px;                
+  width: 100%;               
+  height: 100%;              
+  
+  background: #d43535; 
+  z-index: 1;
+  border-radius: 50%            
+}

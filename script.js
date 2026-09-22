@@ -90,7 +90,7 @@ console.log(lastName)
 console.log(Horse2.name)
 console.log(Horse)
 
-// Day 2 //
+// Day 2 - Face Thing Exercise //
 const value = document.querySelector("#value");
 const input = document.querySelector("#pi_input");
 value.textContent = input.value;

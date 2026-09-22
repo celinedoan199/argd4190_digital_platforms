@@ -4,12 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <h1>ehhhh...</h1>
-    <hr>
-     content here ?
-     <br>
+    <h1>Cool and Epic Page With a Horse</h1>
+
+    <label for="wordInput">Who's That Horse? (case sensitive)</label>
+    <input id="wordInput" type="text" placeholder="Name Here"/>
+    <h2 id="word">Who Is He?</h2>
+    <button onclick="checkAnswer()">Check</button>
+    <p id="feedback"></p>
+<br>
+    <div id="imgContainer">
+        <div id="bgCircle"></div>
+        <img id="golshi" src="assests/Golshi Plush.png" alt="">
+    </div>
+    <p>
+        <label for="circColor">Color Him.</label>
+        <input id="circColor" type="color" value="#d43535"/>
+        <output for="circColor"></output>
+    </p>
+<br>
+    <span>Rotate Him.</span>    
+    <input type="range" min="-30" max="30" step="1" style="width: 104px;">
+<br>
+    <span>skewX Him.</span><input type="range" min="-30" max="30" step="1" style="width: 104px;">
+
+<hr>
+    <br>
+    content here 
+    <br>
     <img src="./assests/HHPrhtnbkAAKPjE.jpg" alt="nom" width="500">
     <p>haiiii</p>
     <a href="https://cookieclicker.com/">Click for cookies</a>
@@ -19,5 +44,7 @@
     <div>?</div>
     <br>
     <button><a href="index.html">back</a></button>
+
+    <script src="myScript.js"></script>
 </body>
 </html>
