@@ -19,17 +19,16 @@ img{
     max-width: 100%;
 }
 /* project 2-2 */
-#golshi{
-    width: 500px;
-}
 #imgContainer {
     position: relative;
     box-sizing: border-box;
     border: 1px solid black;
     margin: 50px;
     max-width: 500px;
+    padding: 50px;
 }
-#imgContainer img {
+#golshi {
+    width: 500px;
     display: block;
     max-width: 100%;
     object-fit: contain;
@@ -37,16 +36,46 @@ img{
     position: relative;
     z-index: 2;
 }
-#bgCircle::before {
+#circle{
   content: "";
   position: absolute;
   
   top: -20px;
-  left: -40px;                
-  width: 100%;               
+  left: -30px;                
+  width: 90%;               
   height: 100%;              
   
-  background: #d43535; 
+  background-color: #d43535; 
   z-index: 1;
   border-radius: 50%            
+}
+.answerBlock{
+    background-color: white;
+    border: solid black 1px;
+    display: block;
+    width: 125px;
+    text-align: center;
+    padding: 2px;
+}
+.answerKey{
+  display: none;
+}
+.answerBlock:hover + .answerKey {
+    display: block;
+    color: green;
+    margin-top: 10px;
+}
+/* Jumping */
+#golshi {
+  transition: transform 0.1s ease;
+}
+
+#golshi.jump {
+  animation: jumpAnim 0.2s ease;
+}
+
+@keyframes jumpAnim {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+  100% { transform: translateY(0); }
 }
