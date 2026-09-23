@@ -9,13 +9,14 @@
 </head>
 <body>
     <h1>Cool and Epic Page With a Horse</h1>
-
-    <label for="wordInput"><h2>Who's That Horse? (case sensitive)</h2></label>
-    <input id="wordInput" type="text" placeholder="Name Here"/>
-    <h3 id="word">Who Is He?</h3>
-    <button onclick="checkAnswer()">Check</button>
-    <p id="feedback"></p>
-    
+    <div class="layout1">
+        <label for="wordInput"><h2>Who's That Horse? (case sensitive)</h2></label>
+        <input id="wordInput" type="text" placeholder="Name Here"/>
+        <h3 id="word">Who Is He?</h3>
+        <button onclick="checkAnswer()">Check</button>
+        <p id="feedback"></p>
+    </div>
+<!-- Answer Key -->
     <div class="answerBlock">Hover for Answer</div>
     <div class="answerKey">Answer: Gold Ship</div>
 <br>
@@ -23,36 +24,38 @@
         <div id="circle"></div>
         <img id="golshi" src="assests/Golshi Plush.png" alt="">
     </div>
-
-    <span>Change Border Weight</span>
+    <!-- Border Weight -->
+    <span>Change Border Weight (1-10)</span>
     <input type="number" name="Increase-Border-Weight" id="borderWeight" min="1" max="10">
 <br>
     <button id="dotButton">Dot Border</button>
     <button id="solidButton">Solid Border</button>
-
+    <!-- Scale Him -->
     <p>
         <label for="golScale">Scale Him.</label>
         <input id="golScale" type="range" min="0.1" max="1.5" step="0.1" value="1" />
         <output for="golScale"></output>
     </p>
+    <!-- Color It -->
     <p>
         <label for="circColor">Color It. (the circle)</label>
         <input id="circColor" type="color" value="#d43535" />
         <output for="circColor"></output>
     </p>
+    <!-- Scale It -->
     <p>
         <label for="circScale">Scale It.</label>
         <input id="circScale" type="range" min="0.1" max="1" step="0.1" value="1" />
         <output for="circScale"></output>
     </p>
     <!-- Move It -->
-        <p>
-            <label for="moveX">Move It X</label>
-            <input id="moveX" type="range" min="-50" max="200" value="100" />
-            <br>
-            <label for="moveY">Move It Y</label>
-            <input id="moveY" type="range" min="-200" max="200" value="100" />
-        </p>
+    <p>
+        <label for="moveX">Move It X</label>
+        <input id="moveX" type="range" min="-50" max="200" value="100" />
+        <br>
+        <label for="moveY">Move It Y</label>
+        <input id="moveY" type="range" min="-200" max="200" value="100" />
+    </p>
 
 
 <br>
