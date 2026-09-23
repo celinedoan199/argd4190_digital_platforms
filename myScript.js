@@ -35,11 +35,10 @@ function checkAnswer() {
 }
 const feedbackElement = document.getElementById("feedback");
 
-// Very Important Function //
+// Update Output //
 function updateOutput(element, input) {
   element.textContent = input.value
 }
-// Very Important Function //
 
 // Circle Color //
 let circle = document.getElementById("circle")
