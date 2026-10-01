@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horses</title>
+<!-- CSS -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylehorse.css">
+
+</head>
+<body>
+    <nav id="top" class="two-padding">
+        <div class="logo">
+           <span class="sec-color half-padding">🐴 A Site With Horses</span>
+        </div>
+        <br>
+        <button><a href="#bottom">to bottom</a></button>
+    </nav>
+
+    <header class="main-color home-image">
+        <h1>Welcome to the JRA</h1>
+        <img src="horse_imgs/SundaySilencePreaknessDickstein.jpg" alt=""> 
+    </header>
+
+    <main class="one-half-margin">
+        <section class="filtering">
+            <div class="search-bar half-padding sec-color">
+                <search>
+                    <form action="/search" method="get">
+                        <label id="search-label" for="site-search">🔍 </label>
+                        <input 
+                        type="search" 
+                        id="site-search" 
+                        name="q" 
+                        placeholder="Search..." 
+                        aria-labelledby="search-label"
+                        autocomplete="off"
+                        required
+                        >
+                        <button type="submit">Submit</button>
+                    </form>
+                </search>     
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn sec-color">Filter By &#x25BC</button>
+                <div class="dropdown-content sec-color">
+                    <span>Show All</span>
+                    <span class="sort-status">Status</span>
+                    <span>Gender</span>
+                    <span>Coat</span>
+                    <span>Surface</span>
+                </div>
+                <span class="filter-type"></span>
+            </div>
+            <!-- specific filter buttons  -->
+            <div id="filter-sec" class="filter-buttons half-margin-top">
+                <button horse-status="all" id="show-all-btn">All</button>
+                <button horse-status="active" id="active-btn" class="filter statusFilter">Active</button>
+                <button horse-status="retired" id="retired-btn" class="filter statusFilter">Retired</button>
+                <button horse-status="retired (rip)" class="filter statusFilter">RIP</button>
+                <button horse-status="retired (stud)" class="filter statusFilter">Stud</button>
+                <button horse-status="retired (broodmare)" class="filter statusFilter">Broodmare</button>
+                <button horse-status="retired (other work)" class="filter statusFilter">Working</button>
+            </div>
+        </section>
+
+        <section id="horses" class=""></section>
+    </main>
+    
+    <footer id="bottom" class="two-padding">
+        <button><a href="#top">to top</a></button>
+    </footer>
+
+<!-- JS -->
+<script src="scripthorse.js"></script> 
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/dp-data"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "argd4190_digital_platforms"
+	}
+}

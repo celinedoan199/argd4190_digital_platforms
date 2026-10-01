@@ -136,3 +136,28 @@ moveX.addEventListener("input", function (event) {
 moveY.addEventListener("input", function (event) {
   changePosition(circle, moveX, moveY);
 })
+
+//// New Stuff ////
+let person = {
+  firstName: "Meisho",
+  lastName: "Tabaru",
+  age: 5,
+  address: {
+    street: "123 Main Street",
+    city: "Hanshin",
+    zip: 564,
+  },
+  hobbies: ["rain dances", "racing", "eating"]
+}
+  // you can put multiple of these objects into an array //
+console.log(person.firstName)
+console.log(person["lastName"])
+  // another way to access a key + value //
+  // allows you to access attributes with a space in the name (ie .["movie genres"]//
+console.log(person.address.city)
+  // shoould log Hanshin //
+console.log(person.hobbies[0])
+  // should log first item in array (rain dances here) //
+console.log(person.hobbies[3])
+  // will log undefined bc there are not enough items in the array //
+
