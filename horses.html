@@ -25,7 +25,7 @@
 
     <main class="one-half-margin">
         <section class="filtering">
-            <div class="search-bar half-padding sec-color">
+            <div class="search-bar shad-round half-padding sec-color">
                 <search>
                     <form action="/search" method="get">
                         <label id="search-label" for="site-search">🔍 </label>
@@ -42,27 +42,57 @@
                     </form>
                 </search>     
             </div>
-            <div class="dropdown">
-                <button class="dropbtn sec-color">Filter By &#x25BC</button>
-                <div class="dropdown-content sec-color">
-                    <span>Show All</span>
-                    <span class="sort-status">Status</span>
-                    <span>Gender</span>
-                    <span>Coat</span>
-                    <span>Surface</span>
+            <section id="drop-buttons-sec" class="shad-round">
+                <div class="dropdown">
+                    <button class="dropbtn sec-color">Filter By &#x25BC</button>
+                    <div class="dropdown-content sec-color">
+                        <span horse-status="all" id="show-all-btn">Show All</span>
+                        <span class="sort-status" onclick="toggleStatuses()">Status</span>
+                        <span class="sort-gender" onclick="toggleGenders()">Gender</span>
+                        <span class="sort-coat" onclick="toggleCoat()">Coat</span>
+                        <span class="sort-surface" onclick="toggleSurface()">Surface</span>
+                    </div>
+                    <span class="filter-type"></span>
                 </div>
-                <span class="filter-type"></span>
-            </div>
-            <!-- specific filter buttons  -->
-            <div id="filter-sec" class="filter-buttons half-margin-top">
-                <button horse-status="all" id="show-all-btn">All</button>
-                <button horse-status="active" id="active-btn" class="filter statusFilter">Active</button>
-                <button horse-status="retired" id="retired-btn" class="filter statusFilter">Retired</button>
-                <button horse-status="retired (rip)" class="filter statusFilter">RIP</button>
-                <button horse-status="retired (stud)" class="filter statusFilter">Stud</button>
-                <button horse-status="retired (broodmare)" class="filter statusFilter">Broodmare</button>
-                <button horse-status="retired (other work)" class="filter statusFilter">Working</button>
-            </div>
+                <!-- specific filter buttons  -->
+                <!-- filter by status -->
+                <!-- <button horse-status="all" id="show-all-btn">All</button> -->
+                <div id="status-filter-sec" class="filter-buttons">
+                    <span>Status:</span>
+                    <button horse-status="active" id="active-btn" class="filter statusFilter">Active</button>
+                    <button horse-status="retired" id="retired-btn" class="filter statusFilter">Retired</button>
+                    <button horse-status="retired (rip)" class="filter statusFilter">RIP</button>
+                    <button horse-status="retired (stud)" class="filter statusFilter">Stud</button>
+                    <button horse-status="retired (broodmare)" class="filter statusFilter">Broodmare</button>
+                    <button horse-status="retired (other work)" class="filter statusFilter">Working</button>
+                </div>
+                <!-- filter by gender -->
+                 <div id="gender-filter-sec">
+                    <span>Gender:</span>
+                    <button horse-gender="filly" class="filter">Filly</button>
+                    <button horse-gender="mare" class="filter">Mare</button>
+                    <button horse-gender="colt" class="filter">Colt</button>
+                    <button horse-gender="horse" class="filter">Horse</button>
+                    <button horse-gender="gelding" class="filter">Gelding</button>
+                 </div>
+                <!-- filter by coat color -->
+                    <div id="coat-filter-sec">
+                        <span>Coat:</span>
+                        <button horse-coat="bay" class="filter">Bay</button>
+                        <button horse-coat="dark bay" class="filter">Dark Bay</button>
+                        <button horse-coat="chestnut" class="filter">Chestnut</button>
+                        <button horse-coat="gray" class="filter">Gray</button>
+                        <button horse-coat="white" class="filter">White</button>
+                    </div>
+                <!-- filter by surfaces -->
+                 <div id="surface-filter-sec">
+                    <span>Surface:</span>
+                    <button horse-surface="turf" class="filter surfaceFilter">Turf</button>
+                    <button horse-surface="dirt" class="filter surfaceFilter">Dirt</button>
+                    <button horse-surface="turf/dirt" class="filter surfaceFilter">Turf/Dirt</button>
+                </div>
+            </section>
+
         </section>
 
         <section id="horses" class=""></section>
