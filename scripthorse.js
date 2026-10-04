@@ -130,18 +130,18 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
 
 //// FILTERS ////
 /// filter for horse status ///
-    // function makeStatusFilter(status) {
-    //     document.querySelector(`[horse-status="${status}"]`).addEventListener("click", function() {
-    //     let horsesSection = document.querySelector("#horses")
-    //     horsesSection.innerHTML = ""
-    //     let filteredStatus = horses.filter(horse => horse.status.toLowerCase() === status);
-    //     for(let i = 0; i < filteredStatus.length; i++) {
-    //         makeDisplay(filteredStatus[i])
-    //     }
-    //     let filters = document.querySelectorAll(".filter")
-    //     styleFilters(filters, status)
-    // })
-    // }
+    function makeStatusFilter(status) {
+        document.querySelector(`[horse-status="${status}"]`).addEventListener("click", function() {
+        let horsesSection = document.querySelector("#horses")
+        horsesSection.innerHTML = ""
+        let filteredStatus = horses.filter(horse => horse.status.toLowerCase() === status);
+        for(let i = 0; i < filteredStatus.length; i++) {
+            makeDisplay(filteredStatus[i])
+        }
+        let filters = document.querySelectorAll(".filter")
+        styleFilters(filters, status)
+    })
+    }
     // array for statuses //
     // let statuses = ["active", "retired", "retired (rip)", "retired (other work)", "retired (stud)", "retired (broodmare)"]
     // for(let i = 0; i < statuses.length; i++) {
