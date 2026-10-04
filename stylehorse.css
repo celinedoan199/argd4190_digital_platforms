@@ -93,7 +93,7 @@ main {
     text-decoration: none !important;
     text-align: center;
     font-size: 1.2rem;
-    border-radius: 50%;
+    border-radius: 1.5rem;
 }
 .nav-button:hover {
     border: var(--secondary-color) solid .15rem;
