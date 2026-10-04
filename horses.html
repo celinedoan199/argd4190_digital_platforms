@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horses</title>
+<!-- Type Faces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <!-- CSS -->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="stylehorse.css">
 
 </head>
 <body>
-    <nav id="top" class="two-padding">
-        <div class="logo">
-           <span class="sec-color half-padding">🐴 A Site With Horses</span>
+    <nav id="top" class=>
+        <div>
+           <span class="sec-color atkinson-hyperlegible-regular logo font-bold">🐴 A Site With Horses</span>
         </div>
         <br>
-        <button><a href="#bottom">to bottom</a></button>
+        <span><a class="nav-button atkinson-hyperlegible-bold" href="#bottom">&#8595</a></span>
     </nav>
 
     <header class="main-color home-image">
@@ -23,28 +27,23 @@
         <img src="horse_imgs/SundaySilencePreaknessDickstein.jpg" alt=""> 
     </header>
 
-    <main class="one-half-margin">
+    <main class="one-half-margin atkinson-hyperlegible-regular">
         <section class="filtering">
-            <div class="search-bar shad-round half-padding sec-color">
-                <search>
-                    <form action="/search" method="get">
-                        <label id="search-label" for="site-search">🔍 </label>
-                        <input 
-                        type="search" 
-                        id="site-search" 
-                        name="q" 
-                        placeholder="Search..." 
-                        aria-labelledby="search-label"
-                        autocomplete="off"
-                        required
-                        >
-                        <button type="submit">Submit</button>
-                    </form>
-                </search>     
-            </div>
+
+            <!-- DROPDOWN MENU -->
             <section id="drop-buttons-sec" class="shad-round">
+                <div class="search-bar">
+                    <search>
+                            <label class="atkinson-hyperlegible-bold" id="search-label" for="site-search">Search 🔍 </label>
+                            <input 
+                                type="search" 
+                                id="site-search" 
+                                placeholder="Horse Name" 
+                                >
+                    </search>     
+                </div>
                 <div class="dropdown">
-                    <button class="dropbtn sec-color">Filter By &#x25BC</button>
+                    <button class="dropbtn sec-color atkinson-hyperlegible-bold">Filter By &#x25BC</button>
                     <div class="dropdown-content sec-color">
                         <span horse-status="all" id="show-all-btn">Show All</span>
                         <span class="sort-status" onclick="toggleStatuses()">Status</span>
@@ -52,13 +51,12 @@
                         <span class="sort-coat" onclick="toggleCoat()">Coat</span>
                         <span class="sort-surface" onclick="toggleSurface()">Surface</span>
                     </div>
-                    <span class="filter-type"></span>
                 </div>
                 <!-- specific filter buttons  -->
                 <!-- filter by status -->
                 <!-- <button horse-status="all" id="show-all-btn">All</button> -->
                 <div id="status-filter-sec" class="filter-buttons">
-                    <span>Status:</span>
+                    <span class="atkinson-hyperlegible-bold filterIndicat">Status:</span>
                     <button horse-status="active" id="active-btn" class="filter statusFilter">Active</button>
                     <button horse-status="retired" id="retired-btn" class="filter statusFilter">Retired</button>
                     <button horse-status="retired (rip)" class="filter statusFilter">RIP</button>
@@ -67,8 +65,8 @@
                     <button horse-status="retired (other work)" class="filter statusFilter">Working</button>
                 </div>
                 <!-- filter by gender -->
-                 <div id="gender-filter-sec">
-                    <span>Gender:</span>
+                 <div id="gender-filter-sec" class="filter-buttons">
+                    <span class="atkinson-hyperlegible-bold filterIndicat">Gender:</span>
                     <button horse-gender="filly" class="filter">Filly</button>
                     <button horse-gender="mare" class="filter">Mare</button>
                     <button horse-gender="colt" class="filter">Colt</button>
@@ -76,8 +74,8 @@
                     <button horse-gender="gelding" class="filter">Gelding</button>
                  </div>
                 <!-- filter by coat color -->
-                    <div id="coat-filter-sec">
-                        <span>Coat:</span>
+                    <div id="coat-filter-sec" class="filter-buttons">
+                        <span class="atkinson-hyperlegible-bold filterIndicat">Coat:</span>
                         <button horse-coat="bay" class="filter">Bay</button>
                         <button horse-coat="dark bay" class="filter">Dark Bay</button>
                         <button horse-coat="chestnut" class="filter">Chestnut</button>
@@ -85,8 +83,8 @@
                         <button horse-coat="white" class="filter">White</button>
                     </div>
                 <!-- filter by surfaces -->
-                 <div id="surface-filter-sec">
-                    <span>Surface:</span>
+                 <div id="surface-filter-sec" class="filter-buttons">
+                    <span class="atkinson-hyperlegible-bold filterIndicat">Surface:</span>
                     <button horse-surface="turf" class="filter surfaceFilter">Turf</button>
                     <button horse-surface="dirt" class="filter surfaceFilter">Dirt</button>
                     <button horse-surface="turf/dirt" class="filter surfaceFilter">Turf/Dirt</button>
@@ -95,11 +93,13 @@
 
         </section>
 
-        <section id="horses" class=""></section>
+        <section id="horses">
+            <h2 class="filter-title">All</h2>
+        </section>
     </main>
     
     <footer id="bottom" class="two-padding">
-        <button><a href="#top">to top</a></button>
+        <span><a class="nav-button atkinson-hyperlegible-bold" href="#top">&#x2191</a></span>
     </footer>
 
 <!-- JS -->

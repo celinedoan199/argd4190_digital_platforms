@@ -1,4 +1,5 @@
-let horses
+let horses = []
+// fetch data from json //
 fetch("horses.json").then(response => response.json())
     .then(json => {
         horses = json
@@ -6,7 +7,6 @@ fetch("horses.json").then(response => response.json())
             let horse = horses[i]
             makeDisplay(horse)
         }
-        
     })
 .catch(error => console.log("error", error))
 
@@ -14,9 +14,9 @@ fetch("horses.json").then(response => response.json())
 function makeDisplay(horse) {
     // the whole container for all the indiv horse info //
         let horsesSection = document.querySelector("#horses")
-    // stuff for horses' status //
-        let status = horse.status.split(",")
-        let statusList = document.createElement("p")
+    // // stuff for horses' status //
+    //     let status = horse.status.split(",")
+    //     let statusList = document.createElement("p")
     // the individual horses & their information //
         let newHorse = document.createElement("div")
     // make the section with all the horse info //
@@ -26,16 +26,36 @@ function makeDisplay(horse) {
                 <div>
                     <img class="horseImage" src="${horse.image_path}" alt="${horse.alt_text}">
                 </div>
-                <span>Status: ${horse["status"]}</span>
-                <span>Foaled: ${horse["foaled"]}</span>
-                <span>Owner: ${horse["owner"]}</span>
-                <span>Gender: ${horse["gender"]}</span>
-                <span>Coat: ${horse["coat"]}</span>
-                <span>Surface(s) Ran: ${horse["surface"]}</span>
+                <p><span class="font-bold">Status:</span> ${horse["status"]}</p>
+                <p><span class="font-bold"> Foaled:</span> ${horse["foaled"]}</p>
+                <p><span class="font-bold">Owner:</span> ${horse["owner"]}</p>
+                <p><span class="font-bold">Gender:</span> ${horse["gender"]}</p>
+                <p><span class="font-bold">Coat:</span> ${horse["coat"]}</p>
+                <p><span class="font-bold">Surface(s) Ran:</span> ${horse["surface"]}</p>
             `
     // append things //
         horsesSection.appendChild(newHorse)
-} //end//
+}
+
+// SEARCH BAR ////
+    let searchBar = document.getElementById("site-search")
+    searchBar.addEventListener("keyup", function() {
+        let search = searchBar.value.toLowerCase()
+        let filteredHorses = horses.filter(horse =>
+            horse.horse_name.toLowerCase().startsWith(search)
+        )
+        let horsesSection = document.querySelector("#horses")
+        horsesSection.innerHTML = `
+            <h2 class="filter-title">Search Results</h2>
+        `
+        for (let horse of filteredHorses) {
+            makeDisplay(horse)
+        }
+        let filters = document.querySelectorAll(".filter")
+        filters.forEach(filter => {
+            filter.classList.remove("clicked")
+        })
+    })
 
 // TOGGLE BUTTONS //
 let showStatusBtns = document.getElementById("status-filter-sec")
@@ -100,6 +120,7 @@ let showSurfbtns = document.getElementById("surface-filter-sec")
             this.classList.add("clicked")
             })
     })
+// remove clicked status when show all //
 document.querySelector("#show-all-btn").addEventListener("click", function() {
     let filters = document.querySelectorAll(".filter")
     filters.forEach(filter => {
@@ -109,18 +130,18 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
 
 //// FILTERS ////
 /// filter for horse status ///
-    function makeStatusFilter(status) {
-        document.querySelector(`[horse-status="${status}"]`).addEventListener("click", function() {
-        let horsesSection = document.querySelector("#horses")
-        horsesSection.innerHTML = ""
-        let filteredStatus = horses.filter(horse => horse.status.toLowerCase() === status);
-        for(let i = 0; i < filteredStatus.length; i++) {
-            makeDisplay(filteredStatus[i])
-        }
-        let filters = document.querySelectorAll(".filter")
-        styleFilters(filters, status)
-    })
-    }
+    // function makeStatusFilter(status) {
+    //     document.querySelector(`[horse-status="${status}"]`).addEventListener("click", function() {
+    //     let horsesSection = document.querySelector("#horses")
+    //     horsesSection.innerHTML = ""
+    //     let filteredStatus = horses.filter(horse => horse.status.toLowerCase() === status);
+    //     for(let i = 0; i < filteredStatus.length; i++) {
+    //         makeDisplay(filteredStatus[i])
+    //     }
+    //     let filters = document.querySelectorAll(".filter")
+    //     styleFilters(filters, status)
+    // })
+    // }
     // array for statuses //
     // let statuses = ["active", "retired", "retired (rip)", "retired (other work)", "retired (stud)", "retired (broodmare)"]
     // for(let i = 0; i < statuses.length; i++) {
