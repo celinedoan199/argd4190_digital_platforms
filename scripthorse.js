@@ -143,10 +143,10 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
     })
     }
     // array for statuses //
-    // let statuses = ["active", "retired", "retired (rip)", "retired (other work)", "retired (stud)", "retired (broodmare)"]
-    // for(let i = 0; i < statuses.length; i++) {
-    //     makeStatusFilter(statuses[i])
-    // }
+    let statuses = ["active", "retired", "retired (rip)", "retired (other work)", "retired (stud)", "retired (broodmare)"]
+    for(let i = 0; i < statuses.length; i++) {
+        makeStatusFilter(statuses[i])
+    }
     // would be nice if by default it highlights them in a different color & you can check a box to show only applicable, or the other way around //
         // but alas idk how to do that //
         // SHOW ALL BUTTON //

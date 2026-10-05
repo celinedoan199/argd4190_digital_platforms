@@ -37,6 +37,9 @@ html{
     .sec-color {
         background-color: var(--secondary-color);
     }
+    .text-color {
+        color: var(--main-color-dark);
+    }
 /* margins */ /* margins */
     .one-margin {
         margin: 1rem;
@@ -73,10 +76,17 @@ html{
         border-radius: .5rem;
         box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.3);
     }
+.line-space {
+    line-height: 1.3rem;
+}
 /*  */
 main {
     margin-right: .2rem;
     font-family: "Atkinson Hyperlegible", sans-serif;
+}
+.about-line {
+    text-align: center;
+    line-height: 2rem;
 }
 .logo {
     font-size: 1.2rem;
@@ -94,6 +104,8 @@ main {
     text-align: center;
     font-size: 1.2rem;
     border-radius: 1.5rem;
+    margin: 0 1rem 0 1rem;
+    display: inline-block;
 }
 .nav-button:hover {
     border: var(--secondary-color) solid .15rem;
@@ -166,6 +178,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 2.5rem;
+    ul li{
+        float: left;
+    }  
 }
 #horses{
     display: grid;
@@ -327,6 +342,13 @@ h2 {
             font-size: 3rem;
         }
     }
+    .nav-button {
+        font-size: 1rem;
+        margin: 0 .5rem 0 .5rem;
+    }
+    nav {
+        padding: 2.5rem 1rem 2.5rem 1rem;
+    }
 }   
 /* SmallER Size ? */
 @media screen and (max-width:28rem){
@@ -346,6 +368,10 @@ h2 {
         h1 {
             font-size: 4rem;
         }
+    }
+    .nav-button {
+        font-size: .8rem;
+        margin: 0 .5rem 0 .5rem;
     }
 } 
 /* bigger than small-size */
