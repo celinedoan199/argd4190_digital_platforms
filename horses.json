@@ -8,7 +8,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/almond_eye.jpg",
-    "alt_text": "A photograph of Japanese racehorse Almond Eye at the 2020 Autumn Tenno Sho."
+    "alt_text": "A photograph of Japanese racehorse Almond Eye at the 2020 Autumn Tenno Sho.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Babbit",
@@ -19,7 +20,8 @@
     "coat": "Chestnut",
     "surface": "Turf",
     "image_path": "horse_imgs/babbit.jpg",
-    "alt_text": "A photograph of Japanese racehorse Babbit at the 2025 Nikkei Sho."
+    "alt_text": "A photograph of Japanese racehorse Babbit at the 2025 Nikkei Sho.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Contrail",
@@ -30,7 +32,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/contrail.jpg",
-    "alt_text": "A photograph of Japanese racehorse Contrail at the 2021 Japan Cup."
+    "alt_text": "A photograph of Japanese racehorse Contrail at the 2021 Japan Cup.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Cosmo Jager",
@@ -41,7 +44,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/cosmo_jager.jpg",
-    "alt_text": "A photograph of Japanese racehorse Cosmo Jager during his debut race."
+    "alt_text": "A photograph of Japanese racehorse Cosmo Jager during his debut race.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Cosmo Kuranda",
@@ -52,7 +56,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/cosmo_kuranda.jpg",
-    "alt_text": "A photograph of Japanese racehorse Cosmo Kuranda at the 2026 Takarzuka Kinen."
+    "alt_text": "A photograph of Japanese racehorse Cosmo Kuranda at the 2026 Takarzuka Kinen.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Croix du Nord",
@@ -63,7 +68,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/croix_du_nord.jpg",
-    "alt_text": "A photograph of Japanese racehorse Croix du Nord at the 2026 Osaka Hai."
+    "alt_text": "A photograph of Japanese racehorse Croix du Nord at the 2026 Osaka Hai.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Daiwa Scarlet",
@@ -74,7 +80,8 @@
     "coat": "Chestnut",
     "surface": "Turf",
     "image_path": "horse_imgs/daiwa_scarlet.jpg",
-    "alt_text": "A photograph of Japanese racehorse Daiwa Scarlet at the 2008 Arima Kinen."
+    "alt_text": "A photograph of Japanese racehorse Daiwa Scarlet at the 2008 Arima Kinen.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Daring Tact",
@@ -85,7 +92,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/daring_tact.jpg",
-    "alt_text": "A photograph of Japanese racehorse Daring Tact at the 2022 Victoria Mile."
+    "alt_text": "A photograph of Japanese racehorse Daring Tact at the 2022 Victoria Mile.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Deep Impact",
@@ -96,7 +104,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/deep_impact.jpg",
-    "alt_text": "A photograph of Japanese racehorse Deep Impact at the 2006 Hanshin Daishoten."
+    "alt_text": "A photograph of Japanese racehorse Deep Impact at the 2006 Hanshin Daishoten.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Dream Journey",
@@ -107,7 +116,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/dream_journey.jpg",
-    "alt_text": "A photograph of Japanese racehorse Dream Journey at the 2021 Arima Kinen."
+    "alt_text": "A photograph of Japanese racehorse Dream Journey at the 2021 Arima Kinen.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Equinox",
@@ -118,7 +128,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/equinox.jpg",
-    "alt_text": "A photograph of Japanese racehorse Equinox at the 2023 Takarazuka Kinen."
+    "alt_text": "A photograph of Japanese racehorse Equinox at the 2023 Takarazuka Kinen.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Exceed",
@@ -129,7 +140,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/exceed.jpg",
-    "alt_text": "A photograph of Japanese racehorse Exceed at the 2026 Flower Cup."
+    "alt_text": "A photograph of Japanese racehorse Exceed at the 2026 Flower Cup.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Fenomeno",
@@ -140,7 +152,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/fenomeno.jpg",
-    "alt_text": "A photograph of Japanese racehorse Fenomeno at the 2013 Spring Tenno Sho."
+    "alt_text": "A photograph of Japanese racehorse Fenomeno at the 2013 Spring Tenno Sho.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Forever Young",
@@ -151,7 +164,8 @@
     "coat": "Bay",
     "surface": "Dirt",
     "image_path": "horse_imgs/forever_young.jpg",
-    "alt_text": "A photograph of Japanese racehorse Forever Young at the 2026 Saudi Cup."
+    "alt_text": "A photograph of Japanese racehorse Forever Young at the 2026 Saudi Cup.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Garavogue",
@@ -162,7 +176,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/garavogue.jpg",
-    "alt_text": "A photograph of Japanese racehorse Garavogue during her debut race."
+    "alt_text": "A photograph of Japanese racehorse Garavogue during her debut race.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Gold Ship",
@@ -173,7 +188,8 @@
     "coat": "Gray",
     "surface": "Turf",
     "image_path": "horse_imgs/gold_ship.jpg",
-    "alt_text": "A photograph of Japanese racehorse Gold Ship at the 2014 Takarazuka Kinen."
+    "alt_text": "A photograph of Japanese racehorse Gold Ship at the 2014 Takarazuka Kinen.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Juryoku Pierrot",
@@ -184,7 +200,8 @@
     "coat": "Chestnut",
     "surface": "Turf/Dirt",
     "image_path": "horse_imgs/juryoku_pierrot.jpg",
-    "alt_text": "A photograph of Japanese racehorse Juryoku Pierrot at the 2026 Wasurenagusa Sho."
+    "alt_text": "A photograph of Japanese racehorse Juryoku Pierrot at the 2026 Wasurenagusa Sho.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Kawakami Princess",
@@ -195,7 +212,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/kawakami_princess.jpg",
-    "alt_text": "A photograph of Japanese racehorse Kawakami Princess at the 2008 Queen Elizabeth 2 Commemorative Cup."
+    "alt_text": "A photograph of Japanese racehorse Kawakami Princess at the 2008 Queen Elizabeth 2 Commemorative Cup.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Kitasan Black",
@@ -206,7 +224,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/kitasan_black.jpg",
-    "alt_text": "A photograph of Japanese racehorse Kitasan Black at the 2017 Arima Kinen."
+    "alt_text": "A photograph of Japanese racehorse Kitasan Black at the 2017 Arima Kinen.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Lovcen",
@@ -217,7 +236,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/lovcen.jpg",
-    "alt_text": "A photograph of Japanese racehorse Lovcen at the 2026 Satsuki Sho."
+    "alt_text": "A photograph of Japanese racehorse Lovcen at the 2026 Satsuki Sho.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Loves Only You",
@@ -228,7 +248,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/loves_only_you.jpg",
-    "alt_text": "A photograph of Japanese racehorse Loves Only You at the 2019 Queen Elizabeth 2 Commemorative Cup."
+    "alt_text": "A photograph of Japanese racehorse Loves Only You at the 2019 Queen Elizabeth 2 Commemorative Cup.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Marche Lorraine",
@@ -239,7 +260,8 @@
     "coat": "Bay",
     "surface": "Turf/Dirt",
     "image_path": "horse_imgs/marche_lorraine.jpg",
-    "alt_text": "A photograph of Japanese racehorse Marche Lorraine during an allowance race for 3 year old horses and older."
+    "alt_text": "A photograph of Japanese racehorse Marche Lorraine during an allowance race for 3 year old horses and older.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Meiner Emperor",
@@ -250,7 +272,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/meiner_emperor.jpg",
-    "alt_text": "A photograph of Japanese racehorse Meiner Emperor at the 2025 Arima Kinen."
+    "alt_text": "A photograph of Japanese racehorse Meiner Emperor at the 2025 Arima Kinen.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Meiner Grimoire",
@@ -261,7 +284,8 @@
     "coat": "Gray",
     "surface": "Turf",
     "image_path": "horse_imgs/meiner_grimoire.jpg",
-    "alt_text": "A photograph of Japanese racehorse Meiner Grimoire during his debut race."
+    "alt_text": "A photograph of Japanese racehorse Meiner Grimoire during his debut race.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Meisho Doto",
@@ -272,7 +296,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/meisho_doto.jpg",
-    "alt_text": "A photograph of Japanese racehorse Meisho Doto at the 2010 Nikkei Sho."
+    "alt_text": "A photograph of Japanese racehorse Meisho Doto at the 2010 Nikkei Sho.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Meisho Hachiko",
@@ -283,7 +308,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/meisho_hachiko.jpg",
-    "alt_text": "A photograph of Japanese racehorse Meisho Hachiko during an allowance race for 3 year old horses and older."
+    "alt_text": "A photograph of Japanese racehorse Meisho Hachiko during an allowance race for 3 year old horses and older.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Meisho Narukami",
@@ -294,7 +320,8 @@
     "coat": "Gray",
     "surface": "Turf",
     "image_path": "horse_imgs/meisho_narukami.jpg",
-    "alt_text": "A photograph of Japanese racehorse Meisho Narukami during a maiden race for 2 year old horses."
+    "alt_text": "A photograph of Japanese racehorse Meisho Narukami during a maiden race for 2 year old horses.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Meisho Tabaru",
@@ -305,7 +332,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/meisho_tabaru.jpg",
-    "alt_text": "A photograph of Japanese racehorse Meisho Tabaru at the 2026 Osaka Hai."
+    "alt_text": "A photograph of Japanese racehorse Meisho Tabaru at the 2026 Osaka Hai.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Mejiro Ramonu",
@@ -316,7 +344,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/mejiro_ramonu.png",
-    "alt_text": "A photograph of Japanese racehorse Mejiro Ramnou at the 1986 Oka Sho."
+    "alt_text": "A photograph of Japanese racehorse Mejiro Ramnou at the 1986 Oka Sho.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Museum Mile",
@@ -327,7 +356,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/museum_mile.jpg",
-    "alt_text": "A photograph of Japanese racehorse Museum Mile at the 2025 Autumn Tenno Sho."
+    "alt_text": "A photograph of Japanese racehorse Museum Mile at the 2025 Autumn Tenno Sho.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "My Universe",
@@ -338,7 +368,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/my_universe.jpg",
-    "alt_text": "A photograph of Japanese racehorse My Universe at the 2026 Nikkei Sho."
+    "alt_text": "A photograph of Japanese racehorse My Universe at the 2026 Nikkei Sho.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Nakayama Festa",
@@ -349,7 +380,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/nakayama_festa.jpg",
-    "alt_text": "A photograph of Japanese racehorse Nakayama Festa at the 2010 Metropolitan Stakes."
+    "alt_text": "A photograph of Japanese racehorse Nakayama Festa at the 2010 Metropolitan Stakes.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Nova Veloce",
@@ -360,7 +392,8 @@
     "coat": "Chestnut",
     "surface": "Turf",
     "image_path": "horse_imgs/nova_veloce.jpg",
-    "alt_text": "A photograph of Japanese racehorse Nova Veloce during his debut race."
+    "alt_text": "A photograph of Japanese racehorse Nova Veloce during his debut race.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Oguri Cap",
@@ -371,7 +404,8 @@
     "coat": "Gray",
     "surface": "Turf/Dirt",
     "image_path": "horse_imgs/oguri_cap.jpg",
-    "alt_text": "A photograph of Japanese racehorse Oguri Cap in the paddock before a race."
+    "alt_text": "A photograph of Japanese racehorse Oguri Cap in the paddock before a race.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Oju Chosan",
@@ -382,7 +416,8 @@
     "coat": "Bay",
     "surface": "Turf (Steeplechase)",
     "image_path": "horse_imgs/oju_chosan.jpg",
-    "alt_text": "A photograph of Japanese racehorse Oju Chosan at the 2022 Nakayama Daishogai."
+    "alt_text": "A photograph of Japanese racehorse Oju Chosan at the 2022 Nakayama Daishogai.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Orfevre",
@@ -393,7 +428,8 @@
     "coat": "Chestnut",
     "surface": "Turf",
     "image_path": "horse_imgs/orfevre.jpg",
-    "alt_text": "A photograph of Japanese racehorse Orfevre at the 2013 Arima Kinen."
+    "alt_text": "A photograph of Japanese racehorse Orfevre at the 2013 Arima Kinen.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Puro Magic",
@@ -404,7 +440,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/puro_magic.jpg",
-    "alt_text": "A photograph of Japanese racehorse Puro Magic at the 2026 Sprinters Stakes."
+    "alt_text": "A photograph of Japanese racehorse Puro Magic at the 2026 Sprinters Stakes.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Realize Luminous",
@@ -415,7 +452,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/realize_luminous.jpg",
-    "alt_text": "A photograph of Japanese racehorse Realize Luminous at the 2026 Japanese Oaks."
+    "alt_text": "A photograph of Japanese racehorse Realize Luminous at the 2026 Japanese Oaks.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Realize Sirius",
@@ -426,7 +464,8 @@
     "coat": "Gray",
     "surface": "Turf",
     "image_path": "horse_imgs/realize_sirius.jpg",
-    "alt_text": "A photograph of Japanese racehorse Realize Sirius at the 2025 Niigata Nisai Stakes."
+    "alt_text": "A photograph of Japanese racehorse Realize Sirius at the 2025 Niigata Nisai Stakes.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Regaleira",
@@ -437,7 +476,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/regaleira.jpg",
-    "alt_text": "A photograph of Japanese racehorse Regaleria at the 2025 Arima Kinen."
+    "alt_text": "A photograph of Japanese racehorse Regaleria at the 2025 Arima Kinen.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Shin Emperor",
@@ -448,7 +488,8 @@
     "coat": "Chestnut",
     "surface": "Turf",
     "image_path": "horse_imgs/shin_emperor.jpg",
-    "alt_text": "A photograph of Japanese racehorse Shin Emperor at the 2025 Arima Kinen."
+    "alt_text": "A photograph of Japanese racehorse Shin Emperor at the 2025 Arima Kinen.",
+    "g1_winner": ""
   },
   {
     "horse_name": "Sodashi",
@@ -459,7 +500,8 @@
     "coat": "White",
     "surface": "Turf",
     "image_path": "horse_imgs/sodashi.jpg",
-    "alt_text": "A photograph of Japanese racehorse Sodashi at the 2022 Ireland Trophy Fuchu Hima Stakes."
+    "alt_text": "A photograph of Japanese racehorse Sodashi at the 2022 Ireland Trophy Fuchu Hima Stakes.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Star Anise",
@@ -470,7 +512,8 @@
     "coat": "Chestnut",
     "surface": "Turf",
     "image_path": "horse_imgs/star_anise.jpg",
-    "alt_text": "A photograph of Japanese racehorse Star Anise at the 2026 Oka Sho."
+    "alt_text": "A photograph of Japanese racehorse Star Anise at the 2026 Oka Sho.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Stay Gold",
@@ -481,7 +524,8 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/stay_gold.jpg",
-    "alt_text": "A photograph of Japanese racehorse Stay Gold at the 1998 Kyoto Daishoten."
+    "alt_text": "A photograph of Japanese racehorse Stay Gold at the 1998 Kyoto Daishoten.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Still in Love",
@@ -492,7 +536,8 @@
     "coat": "Chestnut",
     "surface": "Turf",
     "image_path": "horse_imgs/still_in_love.jpg",
-    "alt_text": "A photograph of Japanese racehorse Still in Love at the 2003 Oka Sho."
+    "alt_text": "A photograph of Japanese racehorse Still in Love at the 2003 Oka Sho.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Sweep Tosho",
@@ -503,7 +548,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/sweep_tosho.jpg",
-    "alt_text": "A photograph of Japanese racehorse Sweep Tosho at the 2007 Victoria Mile."
+    "alt_text": "A photograph of Japanese racehorse Sweep Tosho at the 2007 Victoria Mile.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Tanino Gimlet",
@@ -514,7 +560,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/tanino_gimlet.jpg",
-    "alt_text": "A photograph of Japanese racehorse Tanino Gimlet at the 2002 Arlington Cup."
+    "alt_text": "A photograph of Japanese racehorse Tanino Gimlet at the 2002 Arlington Cup.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "TM Opera O",
@@ -525,7 +572,8 @@
     "coat": "Chestnut",
     "surface": "Turf",
     "image_path": "horse_imgs/tm_opera_o.jpg",
-    "alt_text": "A photograph of Japanese racehorse TM Opera O at the 2000 Hanshin Daishoten."
+    "alt_text": "A photograph of Japanese racehorse TM Opera O at the 2000 Hanshin Daishoten.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Vodka",
@@ -536,7 +584,8 @@
     "coat": "Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/vodka.jpg",
-    "alt_text": "A photograph of Japanese racehorse Vodka at the 2009 Japan Cup."
+    "alt_text": "A photograph of Japanese racehorse Vodka at the 2009 Japan Cup.",
+    "g1_winner": "&#x1F947"
   },
   {
     "horse_name": "Zenno Rob Roy",
@@ -547,6 +596,7 @@
     "coat": "Dark Bay",
     "surface": "Turf",
     "image_path": "horse_imgs/zenno_rob_roy.jpg",
-    "alt_text": "A photograph of Japanese racehorse Zenno Rob Roy at the 2004 Japan Cup."
+    "alt_text": "A photograph of Japanese racehorse Zenno Rob Roy at the 2004 Japan Cup.",
+    "g1_winner": "&#x1F947"
   }
 ]

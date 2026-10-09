@@ -22,7 +22,14 @@ function makeDisplay(horse) {
     // make the section with all the horse info //
         newHorse.classList.add("card")
         newHorse.innerHTML = `
-                <h3 class="horseName">${horse["horse_name"]}</h3>
+                <h3 class="horseName">${horse["horse_name"]} 
+                    <span class="g1-status"> <a href="aboutHorses.html#graded-stakes"> ${horse["g1_winner"]} </a>
+                        <span class="g1-box"> 
+                            Grade 1 Race Winner
+                        </span>
+                    </span>
+                </h3>
+                
                 <div>
                     <img class="horseImage" src="${horse.image_path}" alt="${horse.alt_text}">
                 </div>
@@ -36,7 +43,20 @@ function makeDisplay(horse) {
     // append things //
         horsesSection.appendChild(newHorse)
 }
-
+// TO TOP BUTTON //
+    let topBtn = document.getElementById("to-top");
+    window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+    };
+    function topFunction() {
+    window.scrollTo({
+        top: 0
+    });
+    }
 // SEARCH BAR ////
     let searchBar = document.getElementById("site-search")
     searchBar.addEventListener("keyup", function() {
@@ -46,7 +66,7 @@ function makeDisplay(horse) {
         )
         let horsesSection = document.querySelector("#horses")
         horsesSection.innerHTML = `
-            <h2 class="filter-title">Search Results</h2>
+            <h2 class="filter-title">Search Results (${filteredHorses.length})</h2>
         `
         for (let horse of filteredHorses) {
             makeDisplay(horse)
@@ -152,8 +172,10 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // SHOW ALL BUTTON //
         document.querySelector('[horse-status="all"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
+            let filteredStatus = horses.filter(horse => horse.status.toLowerCase())
+
             horsesSection.innerHTML = `
-                <h2 class="filter-title">All</h2>
+                <h2 class="filter-title">All (${filteredStatus.length})</h2>
                 `
             for(let i = 0; i < horses.length; i++) {
                 makeDisplay(horses[i])
@@ -164,10 +186,12 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // active //
         document.querySelector('[horse-status="active"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Currenty Active</h2>
-                `
             let filteredStatus = horses.filter(horse => horse.status.toLowerCase() === "active");
+
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Currenty Active (${filteredStatus.length})</h2>
+                `
+            
             for(let i = 0; i < filteredStatus.length; i++) {
                 makeDisplay(filteredStatus[i])
             }
@@ -177,10 +201,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // retired //
         document.querySelector('[horse-status="retired"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Retired</h2>
-                `
             let filteredStatus = horses.filter(horse => horse.status.toLowerCase() === "retired");
+
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Retired (${filteredStatus.length})</h2>
+                `
             for(let i = 0; i < filteredStatus.length; i++) {
                 makeDisplay(filteredStatus[i])
             }
@@ -190,10 +215,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // RIP //
         document.querySelector('[horse-status="retired (rip)"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Passed Away (RIP)</h2>
-                `
             let filteredStatus = horses.filter(horse => horse.status.toLowerCase() === "retired (rip)");
+
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Passed Away (RIP) (${filteredStatus.length})</h2>
+                `
             for(let i = 0; i < filteredStatus.length; i++) {
                 makeDisplay(filteredStatus[i])
             }
@@ -203,10 +229,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // broodmare //
         document.querySelector('[horse-status="retired (broodmare)"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Broodmare Duty</h2>
-                `
             let filteredStatus = horses.filter(horse => horse.status.toLowerCase() === "retired (broodmare)");
+
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Broodmare Duty (${filteredStatus.length})</h2>
+                `
             for(let i = 0; i < filteredStatus.length; i++) {
                 makeDisplay(filteredStatus[i])
             }
@@ -216,10 +243,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // stud //
         document.querySelector('[horse-status="retired (stud)"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Stud Duty</h2>
-                `
             let filteredStatus = horses.filter(horse => horse.status.toLowerCase() === "retired (stud)");
+
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Stud Duty (${filteredStatus.length})</h2>
+                `
             for(let i = 0; i < filteredStatus.length; i++) {
                 makeDisplay(filteredStatus[i])
             }
@@ -229,10 +257,12 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // working //
         document.querySelector('[horse-status="retired (other work)"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Working as Off-Track Thoroughbreds</h2>
-                `
             let filteredStatus = horses.filter(horse => horse.status.toLowerCase() === "retired (other work)");
+            
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Working as Off-Track Thoroughbreds (${filteredStatus.length})</h2>
+                `
+            
             for(let i = 0; i < filteredStatus.length; i++) {
                 makeDisplay(filteredStatus[i])
             }
@@ -255,10 +285,14 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // turf //
         document.querySelector('[horse-surface="turf"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
+            let filteredSurfaces = horses.filter(horse =>
+                ["turf", "turf (steeplechase)"].includes(
+                    horse.surface.toLowerCase()
+                )
+            )
             horsesSection.innerHTML = `
-                <h2 class="filter-title">Turf</h2>
+                <h2 class="filter-title">Turf (${filteredSurfaces.length})</h2>
                 `
-            let filteredSurfaces = horses.filter(horse => horse.surface.toLowerCase() === "turf" || "turf (steeplechase)");
             for(let i = 0; i < filteredSurfaces.length; i++) {
                 makeDisplay(filteredSurfaces[i])
             }
@@ -268,10 +302,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // dirt //
         document.querySelector('[horse-surface="dirt"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Dirt</h2>
-                `
             let filteredSurfaces = horses.filter(horse => horse.surface.toLowerCase() === "dirt");
+
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Dirt (${filteredSurfaces.length})</h2>
+                `
             for(let i = 0; i < filteredSurfaces.length; i++) {
                 makeDisplay(filteredSurfaces[i])
             }
@@ -281,10 +316,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // turf/dirt //
         document.querySelector('[horse-surface="turf/dirt"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Turf/Dirt</h2>
-                `
             let filteredSurfaces = horses.filter(horse => horse.surface.toLowerCase() === "turf/dirt");
+
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Turf/Dirt (${filteredSurfaces.length})</h2>
+                `
             for(let i = 0; i < filteredSurfaces.length; i++) {
                 makeDisplay(filteredSurfaces[i])
             }
@@ -307,10 +343,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // bay //
         document.querySelector('[horse-coat="bay"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Bay</h2>
-                `
             let filteredCoat = horses.filter(horse => horse.coat.toLowerCase() === "bay");
+   
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Bay (${filteredCoat.length})</h2>
+                `
             for(let i = 0; i < filteredCoat.length; i++) {
                 makeDisplay(filteredCoat[i])
             }
@@ -320,10 +357,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // dark bay //
         document.querySelector('[horse-coat="dark bay"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Dark Bay</h2>
-                `
             let filteredCoat = horses.filter(horse => horse.coat.toLowerCase() === "dark bay");
+        
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Dark Bay (${filteredCoat.length})</h2>
+                `
             for(let i = 0; i < filteredCoat.length; i++) {
                 makeDisplay(filteredCoat[i])
             }
@@ -333,10 +371,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // chestnut //
         document.querySelector('[horse-coat="chestnut"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Chestnut</h2>
-                `
             let filteredCoat = horses.filter(horse => horse.coat.toLowerCase() === "chestnut");
+            
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Chestnut (${filteredCoat.length})</h2>
+                `
             for(let i = 0; i < filteredCoat.length; i++) {
                 makeDisplay(filteredCoat[i])
             }
@@ -346,10 +385,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // gray //
         document.querySelector('[horse-coat="gray"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Gray</h2>
-                `
             let filteredCoat = horses.filter(horse => horse.coat.toLowerCase() === "gray");
+           
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Gray (${filteredCoat.length})</h2>
+                `
             for(let i = 0; i < filteredCoat.length; i++) {
                 makeDisplay(filteredCoat[i])
             }
@@ -359,10 +399,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // white //
         document.querySelector('[horse-coat="white"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">White</h2>
-                `
             let filteredCoat = horses.filter(horse => horse.coat.toLowerCase() === "white");
+           
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">White (${filteredCoat.length})</h2>
+                `
             for(let i = 0; i < filteredCoat.length; i++) {
                 makeDisplay(filteredCoat[i])
             }
@@ -385,10 +426,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // filly //
         document.querySelector('[horse-gender="filly"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Filly</h2>
-                `
             let filteredGender = horses.filter(horse => horse.gender.toLowerCase() === "filly");
+
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Filly (${filteredGender.length})</h2>
+                `
             for(let i = 0; i < filteredGender.length; i++) {
                 makeDisplay(filteredGender[i])
             }
@@ -398,10 +440,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // mare //
         document.querySelector('[horse-gender="mare"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Mare</h2>
-                `
             let filteredGender = horses.filter(horse => horse.gender.toLowerCase() === "mare");
+
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Mare (${filteredGender.length})</h2>
+                `
             for(let i = 0; i < filteredGender.length; i++) {
                 makeDisplay(filteredGender[i])
             }
@@ -411,10 +454,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // colt //
         document.querySelector('[horse-gender="colt"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Colt</h2>
-                `
             let filteredGender = horses.filter(horse => horse.gender.toLowerCase() === "colt");
+
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Colt (${filteredGender.length})</h2>
+                `
             for(let i = 0; i < filteredGender.length; i++) {
                 makeDisplay(filteredGender[i])
             }
@@ -424,10 +468,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // horse //
         document.querySelector('[horse-gender="horse"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Horse</h2>
-                `
             let filteredGender = horses.filter(horse => horse.gender.toLowerCase() === "horse");
+
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Horse (${filteredGender.length})</h2>
+                `
             for(let i = 0; i < filteredGender.length; i++) {
                 makeDisplay(filteredGender[i])
             }
@@ -437,10 +482,11 @@ document.querySelector("#show-all-btn").addEventListener("click", function() {
         // gelding //
         document.querySelector('[horse-gender="gelding"]').addEventListener("click", function() {
             let horsesSection = document.querySelector("#horses")
-            horsesSection.innerHTML = `
-                <h2 class="filter-title">Gelding</h2>
-                `
             let filteredGender = horses.filter(horse => horse.gender.toLowerCase() === "gelding");
+
+            horsesSection.innerHTML = `
+                <h2 class="filter-title">Gelding (${filteredGender.length})</h2>
+                `
             for(let i = 0; i < filteredGender.length; i++) {
                 makeDisplay(filteredGender[i])
             }
