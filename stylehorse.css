@@ -478,3 +478,19 @@ h2 {
     max-width: 4rem;
     transform: translateY(-150%);
 }
+#graded-stakes {
+    scroll-margin-top: 2rem
+}
+li#graded-stakes:target {
+   background-color: #fff3cd;
+   transition: ease;
+   animation: highlight-pulse 1s ease-in;
+}
+@keyframes highlight-pulse {
+  0% {
+    background-color: var(--secondary-color);
+  }
+  100% {
+    background-color: #fff3cd;
+  }
+}
