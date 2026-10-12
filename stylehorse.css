@@ -6,6 +6,19 @@
 }
 html{
     font-size: 16px;
+    cursor: url('horse-cursor.png') 2 3, auto;
+}
+body {
+    background-color: var(--main-color);
+}
+a:hover  {
+    cursor: url('horse-cursor-hover.png') 2 7, pointer !important;
+}
+button:hover{
+    cursor: url('horse-cursor-hover.png') 2 7, pointer !important;
+}
+nav-button:hover {
+    cursor: url('horse-cursor-hover.png') 2 7, pointer !important;
 }
 /* TYPE FACE */
     .atkinson-hyperlegible-regular {
@@ -195,9 +208,7 @@ button:hover {
     cursor: pointer;
     box-shadow: inset 0px 6px 4px 0px rgba(0,0,0,0.2);
 }
-body {
-    background-color: var(--main-color);
-}
+
 nav {
     background-color: var(--main-color-dark);
     display: inline-block;
@@ -440,6 +451,7 @@ h2 {
 }
 .dropdown-content span:hover {
     background-color: var(--main-color-light);
+    cursor: url('horse-cursor-hover.png') 2 7, pointer !important;
 }
 .dropdown:hover .dropdown-content {
   display: block;
