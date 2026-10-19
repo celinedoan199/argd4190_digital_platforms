@@ -2,51 +2,90 @@ function setup() {
     createCanvas(500, 500);
     frameRate (30)
 }
+
 function draw() {
     background('turquoise');
     fill ("white")
-    textSize(20)
+    textSize(32)
     textStyle(BOLD)
     textAlign(CENTER)
-    text ("Press for Fish", 300, 70)
+    text ("Click & Hold for Fish", 300, 70)
 
     noStroke()
-    fill ("gray")
-    
-    ellipse (250, 250, 200, 150)
-    rect (200, 250, 150, 300)
-
-    fill ("maroon")
-    rect (200, 320, 150, 25)
-
     // right ear //
     fill ("gray")
     triangle (350, 250, 350, 100, 200, 250)
         fill ("pink")
         triangle (300, 180, 330, 150, 330, 190)
-
     // left ear //
-    fill ("gray")
+    fill ("#636363")
     triangle (250, 250, 250, 100, 150, 250)
 
-    fill ("pink")
-    triangle (160, 260, 177, 280, 190, 260)
+    // head //
+    fill ("gray")
+    ellipse (250, 250, 200, 150)
+    rect (200, 250, 150, 300)
+    triangle (300, 200, 300, 500, 400, 500)
+    // collar //
+    fill ("maroon")
+    rect (200, 320, 150, 25)
 
+    // nose //
+    fill ("pink")  
+    triangle (165, 270, 177, 280, 185, 270)
+    // eye //
     fill ("black")
     ellipse (250, 250, 30, 40)
-
+    
     if (mouseIsPressed === true) {
         fill ("black")
             ellipse (250 + random(-1, 2), 250, 30, 40)
         fill ("white")
         circle (250, 240 + random(-1, 2), 20)
             circle (250, 265 + random(-1, 2), 10)
-        fill ("orange")
-        ellipse(80, 200, 70, 150)
-        triangle (50, 330, 80, 260, 110, 330)
+        
+        // Fishing line //   
+        strokeWeight(3);     
+        stroke('brown');
+        line(80, 0, 80, 150)
+        // Fish //
+        noStroke()
+        fill ("orange");
+        ellipse(80, 200, 70, 150);
+        triangle (50, 320, 80, 250, 110, 320);
+        // Fish Details //
+        fill ("black");
+        circle (80, 150, 10);
+        strokeWeight(2);
+        stroke('black');
+        line(50, 170, 110, 170)
+        // text //
+        fill ("white")
+        text ("He\n Hungers", 85, 390)
+        // blush //
+        noStroke()
+        fill ("pink")
+        ellipse (250, 285, 30, 15)
+        // tail //
+        fill ("gray")
+        rect (425, 300, 45, 250, 50)
     } 
-
+    noStroke()
     fill ("yellow")
     circle (230, 360, 30)
+
+    strokeWeight(2); 
+    stroke('black');
+    line (178, 285, 185, 295)
+    line (178, 285, 175, 295)
+
+    // // hand following cursor //
+    // stroke(2)
+    // fill("#FFD3AC")
+    // // angleMode(DEGREES)
+    // // rotate(-45)
+    // ellipse(mouseX, mouseY, 50, 60)
+
     // console.log(mouseX, mouseY)
+
 }
