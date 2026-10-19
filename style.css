@@ -1,6 +1,11 @@
 body{
     margin: 0 24px 24px 24px;
 }
+/* #p5js {
+    transform: translateX(500px);
+    width: 100%;
+    height: auto;
+} */
 h1{
     color: #c19cd9;
     background-color: rgb(40, 15, 56);
