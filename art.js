@@ -1,14 +1,18 @@
 function setup() {
     createCanvas(500, 500);
     frameRate (30)
+    // noLoop() 
 }
 
 function draw() {
-    background('turquoise');
+    // background(random(255), random(255), random(255));
+    background("turquoise")
     fill ("white")
     textSize(32)
     textStyle(BOLD)
     textAlign(CENTER)
+    stroke("black")
+    strokeWeight(3)
     text ("Click & Hold for Fish", 300, 70)
 
     noStroke()
@@ -36,30 +40,52 @@ function draw() {
     // eye //
     fill ("black")
     ellipse (250, 250, 30, 40)
+
+    noStroke()
+    fill ("yellow")
+    circle (230, 360, 30)
+
+    strokeWeight(2); 
+    stroke('black');
+    line (178, 285, 185, 295)
+    line (178, 285, 175, 295)
+
     
     if (mouseIsPressed === true) {
         fill ("black")
-            ellipse (250 + random(-1, 2), 250, 30, 40)
+            ellipse (250, 250, 30 + random(-5, 5), 40 + random(-5, 5))
         fill ("white")
         circle (250, 240 + random(-1, 2), 20)
             circle (250, 265 + random(-1, 2), 10)
         
         // Fishing line //   
-        strokeWeight(3);     
-        stroke('brown');
-        line(80, 0, 80, 150)
-        // Fish //
-        noStroke()
-        fill ("orange");
-        ellipse(80, 200, 70, 150);
-        triangle (50, 320, 80, 250, 110, 320);
-        // Fish Details //
-        fill ("black");
-        circle (80, 150, 10);
-        strokeWeight(2);
-        stroke('black');
-        line(50, 170, 110, 170)
+        push()
+        translate(0, mouseY)
+        ///animation?
+        // let eyeAngle = map(sin(frameCount*0.1), -1, 1, radians(-60), radians((60)))
+        // push()
+        //     translate(-gridSize*0.1, -gridSize*0.1)
+        //     rotate(eyeAngle)
+        //     rect(0,0, gridSize*0.05, gridSize*0.2) // leftE
+        // pop()
+            strokeWeight(3);     
+            stroke('brown');
+            line(80, -1000, 80, 150)
+            // Fish //
+            noStroke()
+            fill ("orange");
+            ellipse(80, 200, 70, 150);
+            triangle (50, 320, 80, 250, 110, 320);
+            // Fish Details //
+            fill ("black");
+            circle (80, 150, 10);
+            strokeWeight(2);
+            stroke('black');
+            line(50, 170, 110, 170)
+        pop()
         // text //
+        stroke("black")
+        strokeWeight(3)
         fill ("white")
         text ("He\n Hungers", 85, 390)
         // blush //
@@ -70,14 +96,7 @@ function draw() {
         fill ("gray")
         rect (425, 300, 45, 250, 50)
     } 
-    noStroke()
-    fill ("yellow")
-    circle (230, 360, 30)
-
-    strokeWeight(2); 
-    stroke('black');
-    line (178, 285, 185, 295)
-    line (178, 285, 175, 295)
+    // else if (mousePressed === false) {}
 
     // // hand following cursor //
     // stroke(2)
