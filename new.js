@@ -28,8 +28,6 @@ function draw() {
     //     circle(i+ 20, 0 , 40)
     // }
     // noFill()
-    stroke("purple")
-    strokeWeight(2)
     for(let i = 0; i < cols; i++) {
         for(j = 0; j < cols; j++) {
             let x = i * gridSize + gridSize/2;

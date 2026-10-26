@@ -58,9 +58,17 @@ function draw() {
         circle (250, 240 + random(-1, 2), 20)
             circle (250, 265 + random(-1, 2), 10)
         
+        // blush //
+        noStroke()
+        fill ("pink")
+        ellipse (250, 285, 30, 15)
+        // tail //
+        fill ("gray")
+        rect (425, 300, 45, 250, 50)
+
         // Fishing line //   
         push()
-        translate(0, mouseY)
+        translate(mouseX, mouseY)
         ///animation?
         // let eyeAngle = map(sin(frameCount*0.1), -1, 1, radians(-60), radians((60)))
         // push()
@@ -70,31 +78,24 @@ function draw() {
         // pop()
             strokeWeight(3);     
             stroke('brown');
-            line(80, -1000, 80, 150)
+            line(0, -1000, 0, 150)
             // Fish //
             noStroke()
             fill ("orange");
-            ellipse(80, 200, 70, 150);
-            triangle (50, 320, 80, 250, 110, 320);
+            ellipse(0, 200, 70, 150);
+            triangle (-35, 320, 0, 250, 35, 320);
             // Fish Details //
             fill ("black");
-            circle (80, 150, 10);
+            circle (0, 150, 10);
             strokeWeight(2);
             stroke('black');
-            line(50, 170, 110, 170)
+            line(-25, 170, 25, 170)
         pop()
         // text //
         stroke("black")
         strokeWeight(3)
         fill ("white")
         text ("He\n Hungers", 85, 390)
-        // blush //
-        noStroke()
-        fill ("pink")
-        ellipse (250, 285, 30, 15)
-        // tail //
-        fill ("gray")
-        rect (425, 300, 45, 250, 50)
     } 
     // else if (mousePressed === false) {}
 
