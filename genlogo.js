@@ -15,12 +15,13 @@ function setup() {
     showLinesCheckBox = createCheckbox('show lines', true);
     linesNumSlider = createSlider (1,12, 6)
     lines1SpinSlider = createSlider (0, .05, 0.02, 0.01)
-    lines1Length = createSlider 
     lines1LenSlider = createSlider (20, 500, 100)
     lines1Color = createColorPicker ("yellow")
     //LINES 2//
+    showLines2CheckBox = createCheckbox('show lines 2', true);
     lines2SpinSlider = createSlider (0, 500)
     lines2NumSlider = createSlider (1,12)
+    lines2LenSlider = createSlider (20, 500, 100)
     // lines2LenSlider 
 
     //EXPORT AS JPG//
@@ -38,8 +39,9 @@ function draw() {
     if (showLinesCheckBox.checked()) {
         drawLines1()
     }
-    drawLines2()
-
+    if (showLines2CheckBox.checked()) {
+        drawLines2()
+    }
 }
 
 function drawCircles() {

@@ -68,7 +68,7 @@ function draw() {
 
         // Fishing line //   
         push()
-        translate(mouseX, mouseY)
+        translate(mouseX, mouseY-200)
         ///animation?
         // let eyeAngle = map(sin(frameCount*0.1), -1, 1, radians(-60), radians((60)))
         // push()
