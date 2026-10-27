@@ -32,19 +32,30 @@ function draw() {
         for(j = 0; j < cols; j++) {
             let x = i * gridSize + gridSize/2;
             let y = j * gridSize + gridSize/2;
+
+      let upValue = map(sin(frameCount*0.1+i+j), -1, 1, -10, 10)
+      translate(0,upValue)
+
             if (i % 2 === 0) {
                 noStroke()
-                fill("#fffff0")
+                fill("rgba(255, 255, 240, 20)")
                 rect(x,y, gridSize)
-                fill("#c19cd9")
+                noStroke()
             } else {
                 noStroke()
                 // fill("teal")
                 // circle(x,y,gridSize*0.5)
                 // noFill()
                 // strokeWeight(3)
-                stroke("#c19cd9")
             }
+            // if (j % 1 === 0) {
+            //     noStroke()
+            //     fill("#fffff0")
+            //     rect(x,y, gridSize)
+            //     fill("#c19cd9")
+            // } else {
+            //     noStroke()
+            //     stroke("#c19cd9")
             //map function////
             //distance btwn mouse & shape
             let d = dist(x, y, mouseX, mouseY);
@@ -56,9 +67,11 @@ function draw() {
             // stroke("yellow")
             // noFill()
 
-            fill(r, 150, b)
-            rect(x, y, size, size, 5);
             rectMode(CENTER)
+            fill(r, 150, b)
+            rect(x, y, size/2, size/2, 5);
+            // rotate(j/num * 2)
+            // rotate(-radians(100, 0))
             // rect(x, y, size);
             // rect(x, y, gridSize*10);
             // triangle(x*10, y*10, gridSize);
