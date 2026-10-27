@@ -41,13 +41,13 @@ function draw() {
             push()
             let d = dist(x, y, mouseX, mouseY);
             let size = map(d, 0, 400, gridSize/1.5, gridSize*0.5);
-            let r = map(x, 0, width, 50, 250);
-            let b = map(y, 0, height, 0, 250)
+            let r = map(x, 0, width, 150, 100);
+            let b = map(y, 0, height, 100, 240)
 
                 let upValue = map(cos(frameCount*0.1+i+j), 1, -1, 10, -10)
                 translate(0,upValue)
 
-                fill(r, 180, b)
+                fill(r, 80, b)
                 circle(x,y, size)
             pop()
         }
