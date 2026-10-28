@@ -1,14 +1,14 @@
 let cols, rows
 let gridSize = 100
 function setup() {
-    createCanvas(500, 510);
+    createCanvas(500, 500);
     frameRate (60);
     cols = int(width/gridSize);
     rows = int(height/gridSize);
 }
 function draw() {
     rectMode(CENTER)
-    background(190, 172, 223, 20);
+    background(190, 172, 223, 15);
     // for(let i = 0; i < width; i+40) {
     //     circle(i+ 20, 0 , 40)
     // }
@@ -32,7 +32,7 @@ function draw() {
                     // rotate(radians(10, 0))
                     // rotate(frameCount * 0.02) 
 
-                    fill(255, 255, 240, 150)
+                    fill(255, 255, 240, 80)
                     rect(x,y, gridSize*2, gridSize/2.5)
                 pop()
             } else {
@@ -42,12 +42,12 @@ function draw() {
             let d = dist(x, y, mouseX, mouseY);
             let size = map(d, 0, 400, gridSize/1.5, gridSize*0.5);
             let r = map(x, 0, width, 150, 100);
-            let b = map(y, 0, height, 100, 240)
+            let b = map(y, 0, height*2, 100, 240)
 
                 let upValue = map(cos(frameCount*0.1+i+j), 1, -1, 10, -10)
                 translate(0,upValue)
 
-                fill(r, 80, b)
+                fill(r, 80, b, 180)
                 circle(x,y, size)
             pop()
         }
