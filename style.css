@@ -85,4 +85,13 @@ img{
   100% { transform: translateY(0); }
 }
 
-/* Flex Box and/or Grids */
+/* P5JS LOGO STUFF */
+.slider {
+    margin: .2rem 1rem;
+}
+.colorPick {
+    margin: .2rem .5rem .2rem .7rem;
+}
+.checkbox {
+    margin-top: 1rem;
+}

@@ -48,7 +48,7 @@ function drawCircles() {
     let num = circleNumSlider.value()
     let gap = circleGapSlider.value()
     let strokeColor = circleStrokeColor.value()
-    for(let i = 0; i< num; i++) {
+    for(let i = 0; i < num; i++) {
         push()
             noStroke()
             // fill("white")

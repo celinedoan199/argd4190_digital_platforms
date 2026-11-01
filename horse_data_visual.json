@@ -1,0 +1,92 @@
+[
+  {
+    "horse": "Meisho Tabaru",
+    "age": "",
+    "status": "active",
+    "g1": 1,
+    "training": "ritto",
+    "gender": "m",
+    "last_active": 2026
+  },
+  {
+    "horse": "Ikuno Dictus",
+    "age": "",
+    "status": "retired",
+    "g1": 0,
+    "training": "ritto",
+    "gender": "f",
+    "last_active": 1993
+  },
+  {
+    "horse": "Sweep Tosho",
+    "age": "",
+    "status": "retired",
+    "g1": 3,
+    "training": "ritto",
+    "gender": "f",
+    "last_active": 2007
+  },
+  {
+    "horse": "Juryoku Pierrot",
+    "age": "",
+    "status": "active",
+    "g1": 1,
+    "training": "ritto",
+    "gender": "f",
+    "last_active": 2026
+  },
+  {
+    "horse": "Croix du Nord",
+    "age": "",
+    "status": "active",
+    "g1": 4,
+    "training": "ritto",
+    "gender": "m",
+    "last_active": 2026
+  },
+  {
+    "horse": "Almond Eye",
+    "age": "",
+    "status": "retired",
+    "g1": 9,
+    "training": "miho",
+    "gender": "f",
+    "last_active": 2020
+  },
+  {
+    "horse": "Gold Ship",
+    "age": "",
+    "status": "retired",
+    "g1": 6,
+    "training": "ritto",
+    "gender": "m",
+    "last_active": 2015
+  },
+  {
+    "horse": "Meiner Grimoire",
+    "age": "",
+    "status": "active",
+    "g1": 0,
+    "training": "ritto",
+    "gender": "m",
+    "last_active": 2026
+  },
+  {
+    "horse": "Mejiro Ramonu",
+    "age": "",
+    "status": "retired",
+    "g1": 3,
+    "training": "miho",
+    "gender": "f",
+    "last_active": 1986
+  },
+  {
+    "horse": "Maruzensky",
+    "age": "",
+    "status": "retired",
+    "g1": 0,
+    "training": "unknown",
+    "gender": "m",
+    "last_active": 1977
+  }
+]
