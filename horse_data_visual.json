@@ -1,92 +1,102 @@
 [
   {
     "horse": "Meisho Tabaru",
-    "age": "",
+    "age": 5,
     "status": "active",
-    "g1": 1,
+    "g1": 2,
     "training": "ritto",
     "gender": "m",
-    "last_active": 2026
+    "last_active": 2026,
+    "career_length": 3
   },
   {
     "horse": "Ikuno Dictus",
-    "age": "",
+    "age": 5,
     "status": "retired",
     "g1": 0,
     "training": "ritto",
     "gender": "f",
-    "last_active": 1993
+    "last_active": 1993,
+    "career_length": 4
   },
   {
     "horse": "Sweep Tosho",
-    "age": "",
+    "age": 5,
     "status": "retired",
     "g1": 3,
     "training": "ritto",
     "gender": "f",
-    "last_active": 2007
+    "last_active": 2007,
+    "career_length": 4
   },
   {
     "horse": "Juryoku Pierrot",
-    "age": "",
+    "age": 3,
     "status": "active",
     "g1": 1,
     "training": "ritto",
     "gender": "f",
-    "last_active": 2026
+    "last_active": 2026,
+    "career_length": 1
   },
   {
     "horse": "Croix du Nord",
-    "age": "",
+    "age": 4,
     "status": "active",
     "g1": 4,
     "training": "ritto",
     "gender": "m",
-    "last_active": 2026
+    "last_active": 2026,
+    "career_length": 2
   },
   {
     "horse": "Almond Eye",
-    "age": "",
+    "age": 5,
     "status": "retired",
     "g1": 9,
     "training": "miho",
     "gender": "f",
-    "last_active": 2020
+    "last_active": 2020,
+    "career_length": 3
   },
   {
     "horse": "Gold Ship",
-    "age": "",
+    "age": 5,
     "status": "retired",
     "g1": 6,
     "training": "ritto",
     "gender": "m",
-    "last_active": 2015
+    "last_active": 2015,
+    "career_length": 4
   },
   {
     "horse": "Meiner Grimoire",
-    "age": "",
+    "age": 2,
     "status": "active",
     "g1": 0,
     "training": "ritto",
     "gender": "m",
-    "last_active": 2026
+    "last_active": 2026,
+    "career_length": ""
   },
   {
     "horse": "Mejiro Ramonu",
-    "age": "",
+    "age": 5,
     "status": "retired",
     "g1": 3,
     "training": "miho",
     "gender": "f",
-    "last_active": 1986
+    "last_active": 1986,
+    "career_length": 1
   },
   {
     "horse": "Maruzensky",
-    "age": "",
+    "age": 5,
     "status": "retired",
     "g1": 0,
     "training": "unknown",
     "gender": "m",
-    "last_active": 1977
+    "last_active": 1977,
+    "career_length": 1
   }
 ]
